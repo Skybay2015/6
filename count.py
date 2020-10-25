@@ -1,16 +1,13 @@
 import random as rnd
 
-x = int(input("Введіть кількість чисел: "))
-number = int(input('Шукане число: '))
-listOfNumb = []
-for i in range(x):
-    listOfNumb.append(rnd.randint(1, 100))
-print(listOfNumb)
+arr = input("Введіть елементи: ").split(' ')
+elem = input('Шуканий елемент: ')
+
 
 amount = 0
 
-for el in listOfNumb:
-    if el == number:
+for el in arr:
+    if el == elem:
         amount += 1
 
-print(number, " зустрічається ", amount, ' разів')
+print(elem, " зустрічається ", amount, ' разів')
